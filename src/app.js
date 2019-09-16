@@ -4,6 +4,8 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 
+const logger = require('./logger');
+
 const bookmarkRouter = require('./bookmarks/bookmark-router');
 
 const app = express()
