@@ -58,7 +58,6 @@ bookmarkRouter.route('/bookmarks/:id')
             return bookmark.id === id;
         });
 
-        console.log(`store id: ${bookmarkMatch.id}, url id: ${id}`);
         if (!bookmarkMatch) {
 
             logger.error(`Bookmark with id ${id} not found`);
